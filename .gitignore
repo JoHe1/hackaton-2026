@@ -1,0 +1,36 @@
+# ── Dependencias y builds de la app ─────────────────────────────
+node_modules/
+dist/
+*.tsbuildinfo
+*.log
+
+# ── Claves y secretos (nunca se suben) ──────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ── Todo lo que no es la app ────────────────────────────────────
+# Notas internas de trabajo del equipo.
+MEMORY.md
+# Proyecto de vídeo (Remotion): grabaciones, voces, música, MP4 exportados
+# y sus dependencias (~775 MB).
+video/
+# Capturas generadas por scripts/walkthrough.mjs.
+screenshots/
+# Captura de referencia de la app oficial (solo diseño). El logotipo sí se
+# sube: lo usa la app (src/components/DisaLogo.tsx).
+referencias/referencia_disa.jpg
+
+# ── Vídeo y audio pesados, estén donde estén ────────────────────
+*.mp4
+*.webm
+*.mov
+*.mp3
+*.wav
+
+# ── Sistema / editores ──────────────────────────────────────────
+.DS_Store
+.vscode/
+.idea/
